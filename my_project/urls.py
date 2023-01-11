@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from animals import views as animals
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', animals.index),
+
 ]
